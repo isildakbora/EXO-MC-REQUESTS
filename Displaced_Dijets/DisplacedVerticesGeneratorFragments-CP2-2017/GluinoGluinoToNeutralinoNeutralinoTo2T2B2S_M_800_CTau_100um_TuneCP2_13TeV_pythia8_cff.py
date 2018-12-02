@@ -43,9 +43,6 @@ generator = cms.EDFilter('Pythia8GeneratorFilter',
     PythiaParameters = cms.PSet(
         pythia8CommonSettingsBlock,
         pythia8CP2SettingsBlock,
-        pdfSettings = cms.vstring(
-            'PDF:pSet = LHAPDF6:NNPDF31_lo_as_0130',
-            ),
         processParameters = cms.vstring(
             'SUSY:gg2gluinogluino = on',
             'SUSY:qqbar2gluinogluino = on',
@@ -56,7 +53,6 @@ generator = cms.EDFilter('Pythia8GeneratorFilter',
         parameterSets = cms.vstring(
             'pythia8CommonSettings',
             'pythia8CP2Settings',
-            'pdfSettings',
             'processParameters',
             ),
         ),
