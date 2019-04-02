@@ -179,6 +179,7 @@ generator = cms.EDFilter("Pythia8GeneratorFilter",
     maxEventsToPrint = cms.untracked.int32(0),
     PythiaParameters = cms.PSet(
         pythia8CommonSettingsBlock,
+        pythia8PSweightsSettingsBlock,
         pythia8CP5SettingsBlock,
         processParameters = cms.vstring(
             'SUSY:all = off',
